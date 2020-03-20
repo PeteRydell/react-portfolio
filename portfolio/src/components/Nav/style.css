@@ -1,22 +1,27 @@
 .MuiAppBar-colorPrimary {
-    background-color: white!important;
-    color: black!important;
+    color: slategray!important;
+    background-color:white!important;
+    border-bottom-style: solid!important;
+    border-left-style: solid!important;
+    border-right-style: solid!important;
+    border-color: lightgray!important;
+    border-width: 1px
 }
 
-img {
-    width: 100px;
+#navbar {
+    padding-top: 10px
 }
 
-.profile {
-    margin-left: auto;
-    color: rgb(224, 167, 10);
+#logo {
+    height: 150px;
+    width: 150px
 }
 
-.profile-icon {
-    margin-bottom: -10px;
-    margin-right: -10px;
+#appbar {
+    text-align: end;
 }
 
-#logout-button:hover {
-    cursor: pointer;
+.MuiPaper-elevation4 {
+    box-shadow: none!important;
 }
+
