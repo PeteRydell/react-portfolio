@@ -18,10 +18,15 @@
 }
 
 #appbar {
-    text-align: end;
+    text-align: center;
 }
 
 .MuiPaper-elevation4 {
     box-shadow: none!important;
+}
+
+.MuiButton-label {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 

@@ -7,11 +7,11 @@ require('./style.css');
 export default function() {
     
 return (
-    <Container id="navbar">
+    <Container>
       <Grid>
             <Grid item xs={12}>
                 <div>
-                    <h1 className="maintext">Freelance Web Designer & Developer based in Los Angeles California.</h1>
+                    <h1 className="maintext">Freelance Full-Stack Developer<br></br>based in Los Angeles California.</h1>
                 </div>
             </Grid>
       </Grid>
