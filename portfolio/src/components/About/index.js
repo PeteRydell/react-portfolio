@@ -19,8 +19,8 @@ require('./style.css');
           },
         },
         large: {
-          width: theme.spacing(50),
-          height: theme.spacing(50),
+          width: theme.spacing(40),
+          height: theme.spacing(40),
         },
       }));
       
@@ -37,7 +37,7 @@ require('./style.css');
                     <Grid item xs={6}>
                         <h1 className="text">A bit About Me</h1>
                         <p className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien est, consectetur non tellus eu, pretium tincidunt purus. Mauris convallis metus ut risus euismod, eu consectetur magna ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur venenatis nisl in tempus. Mauris rhoncus viverra ante quis ultricies. Vestibulum quis maximus diam. Cras gravida ultrices tellus, in blandit sem vulputate in. Duis suscipit urna viverra, pulvinar elit et, placerat velit. Nam ornare porta malesuada. Nullam id sollicitudin enim, sit amet dapibus velit. Mauris nec cursus ante.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien est, consectetur non tellus eu, pretium tincidunt purus. Mauris convallis metus ut risus euismod, eu consectetur magna ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur venenatis nisl in tempus. Mauris rhoncus viverra ante quis ultricies. Vestibulum quis maximus diam. Cras gravida ultrices tellus, in blandit sem vulputate in. Duis suscipit urna viverra, pulvinar elit et, placerat velit.
                         </p>
                         <Box id="morediv">
                             <Fab variant="extended" id="more">
@@ -46,7 +46,8 @@ require('./style.css');
                             </Fab>
                         </Box>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={1}></Grid>
+                    <Grid item xs={5}>
                         <div className={classes.root}>
                             <Avatar alt="Pete Rydell" src={image} className={classes.large} />
                         </div>

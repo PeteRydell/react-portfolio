@@ -14,9 +14,16 @@ import Slide from '@material-ui/core/Slide';
 
 require('./style.css');
 
+const epiqlogo = require('./Picture1.png');
+const zoelogo = require('./Picture2.png');
+const yarnlogo = require('./Picture3.png');
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+  },
+  media: {
+    height: 140,
   },
   paper: {
     padding: theme.spacing(2),
@@ -35,15 +42,15 @@ export default function CenteredGrid() {
       <Slide direction="up" in={true} mountOnEnter unmountOnExit>
         <Grid item xs={4}>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea className="background">
                     <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
+                    image={zoelogo}
+                    title="Zoe"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        Zoe
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -52,9 +59,6 @@ export default function CenteredGrid() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                    Share
-                    </Button>
                     <Button size="small" color="primary">
                     Learn More
                     </Button>
@@ -65,15 +69,15 @@ export default function CenteredGrid() {
         <Slide direction="up" in={true} mountOnEnter unmountOnExit>
         <Grid item xs={4}>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea className="background">
                     <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
+                    image={yarnlogo}
+                    title="Yarn"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        Yarn
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -82,9 +86,6 @@ export default function CenteredGrid() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                    Share
-                    </Button>
                     <Button size="small" color="primary">
                     Learn More
                     </Button>
@@ -95,15 +96,15 @@ export default function CenteredGrid() {
         <Slide direction="up" in={true} mountOnEnter unmountOnExit>
         <Grid item xs={4}>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea className="background">
                     <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
+                    image={epiqlogo}
+                    title="Epiq Automotive"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        Epiq Automotive
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -112,9 +113,6 @@ export default function CenteredGrid() {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                    Share
-                    </Button>
                     <Button size="small" color="primary">
                     Learn More
                     </Button>
