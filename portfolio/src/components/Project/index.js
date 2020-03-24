@@ -11,6 +11,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Slide from '@material-ui/core/Slide';
+// import Box from '@material-ui/core/Box';
+// import Fab from '@material-ui/core/Fab';
+// import NavIcon from '@material-ui/icons/Navigation';
 
 require('./style.css');
 
@@ -37,6 +40,9 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
+    <Container>
+    <h1>Recent Projects</h1>
+    </Container>
     <Container id="snapshots">
       <Grid container spacing={3}>
       <Slide direction="up" in={true} mountOnEnter unmountOnExit>
@@ -53,14 +59,13 @@ export default function CenteredGrid() {
                         Zoe
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                     ZOE offers tutorials, teacher development, and visual programming tools including in-VR creation software.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                    Learn More
+                    In Progress
                     </Button>
                 </CardActions>
             </Card>
@@ -80,13 +85,12 @@ export default function CenteredGrid() {
                         Yarn
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                    Yarn is the interactive micro-storytelling platform that provides fictional stories on your phone with the tap of a finger.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/PeteRydell/yarn-admin">
                     Learn More
                     </Button>
                 </CardActions>
@@ -107,22 +111,29 @@ export default function CenteredGrid() {
                         Epiq Automotive
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        Epiq Automotive is a premier, Montrose-based automotive repair shop providing quality service for every type of vehicle.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href="https://github.com/PeteRydell/epiq-automotive">
                     Learn More
                     </Button>
                 </CardActions>
             </Card>
         </Grid>
         </Slide>
+      </Grid>
+      {/* <Grid item xs={12} id="navport">
+            <Box>
+                <Fab variant="extended" id="more">
+                    <NavIcon className={classes.extendedIcon} />
+                        Portfolio
+                </Fab>
+            </Box>
+        </Grid> */}
         <Grid item xs={12}>
         </Grid>
-      </Grid>
       </Container>
     </div>
   );

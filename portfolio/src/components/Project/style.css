@@ -5,3 +5,8 @@
 .background {
     background-color: #F5F6F7!important;
 }
+
+#navport {
+    text-align: center!important;
+    padding-top: 10px!important;
+}

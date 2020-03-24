@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -39,16 +38,12 @@ export default function () {
     <Container id="navbar">
       <Grid>
           <AppBar id="appbar" position="static">
-          {/* <Grid item xs={2}></Grid> */}
             <Grid item xs={12}>
-              {/* <Toolbar className={classes.toolbar}> */}
                 <Button color="inherit">Home</Button>
                 <Button color="inherit">About</Button>
-                <Button color="inherit">Portfolio</Button>
+                {/* <Button color="inherit">Portfolio</Button> */}
                 <Button color="inherit">Contact</Button>
-              {/* </Toolbar> */}
             </Grid>
-          {/* <Grid item xs={2}></Grid> */}
           </AppBar>
           <Hidden xsDown>
           <Box
