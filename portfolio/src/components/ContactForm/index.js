@@ -33,7 +33,7 @@ export default function MultilineTextFields() {
     <div>
     <Container id="heading" maxWidth="sm">
         <div>
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
         </div>
         <Card id="contactcard">
             <Container>

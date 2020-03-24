@@ -48,7 +48,6 @@ const App = ({ children }) => (
 
 const Home = () => (
   <div>
-        {/* <Nav /> */}
         <Container>
           <Grid>
               <Grid item xs={12}>
@@ -59,7 +58,6 @@ const Home = () => (
         </Container>
         <About />
         <Project />
-    {/* <Footer /> */}
   </div>
 );
 
