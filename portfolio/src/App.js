@@ -8,12 +8,47 @@ import Divider from '@material-ui/core/Divider';
 import About from './components/About';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import MoreAbout from './components/MoreAbout'
+import ContactForm from './components/ContactForm'
+import { render } from "react-dom"
+import { Router } from "@reach/router"
 
+// function App() {
+//   return (
+//     <div>
+//         <Nav />
+//         <Router>
+//           <Container>
+//             <Grid>
+//                 <Grid item xs={12}>
+//                   <Main />
+//                   <Divider id="line"/>
+//                 </Grid>
+//             </Grid>
+//           </Container>
+//           <About />
+//           <Project />
+//         </Router>
+//         <Footer />
+//     </div>
+//   );
+// }
 
-function App() {
-  return (
-    <div>
-        <Nav />
+const App = ({ children }) => (
+  <div>
+  <Nav />
+  <Router>
+    <Home path="/" />
+    <Bio path="about" />
+    <Contact path="contact" />
+  </Router>
+  <Footer />
+  </div>
+);
+
+const Home = () => (
+  <div>
+        {/* <Nav /> */}
         <Container>
           <Grid>
               <Grid item xs={12}>
@@ -24,9 +59,32 @@ function App() {
         </Container>
         <About />
         <Project />
-        <Footer />
-    </div>
-  );
-}
+    {/* <Footer /> */}
+  </div>
+);
 
+const Bio = () => (
+  <div>
+    <Container>
+      <Grid item xs={12}></Grid>
+      <Grid item xs={12}>
+        <MoreAbout />
+      </Grid>
+    </Container>
+  </div>
+);
+
+const Contact = () => (
+  <div>
+    <Container>
+      <Grid item xs={12}></Grid>
+      <Grid item xs={12}>
+        <ContactForm />
+      </Grid>
+    </Container>
+  </div>
+);
+
+
+render(<App />, document.getElementById("root"));
 export default App;

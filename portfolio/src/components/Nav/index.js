@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import { Container } from '@material-ui/core';
+import { Router, Link } from "@reach/router";
 
 require('./style.css');
 
@@ -39,10 +40,10 @@ export default function () {
       <Grid>
           <AppBar id="appbar" position="static">
             <Grid item xs={12}>
-                <Button color="inherit">Home</Button>
-                <Button color="inherit">About</Button>
+                <Button color="inherit"><Link to="/" class="navlink">Home</Link></Button>
+                <Button color="inherit"><Link to="about" class="navlink">About</Link></Button>
                 {/* <Button color="inherit">Portfolio</Button> */}
-                <Button color="inherit">Contact</Button>
+                <Button color="inherit"> <Link to="contact" class="navlink">Contact</Link></Button>
             </Grid>
           </AppBar>
           <Hidden xsDown>
