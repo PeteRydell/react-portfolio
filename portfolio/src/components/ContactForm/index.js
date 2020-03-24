@@ -1,54 +1,88 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
 import { Container } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
+import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import Grid from '@material-ui/core/Grid';
-import Slide from '@material-ui/core/Slide';
+import { Link, navigate } from '@reach/router';
+import Card from '@material-ui/core/Card';
+import Fab from '@material-ui/core/Fab';
 
 require('./style.css');
 
-      const useStyles = makeStyles(theme => ({
-        root: {
-          display: 'flex',
-          '& > *': {
-            margin: theme.spacing(1),
-          },
-        },
-        large: {
-          width: theme.spacing(40),
-          height: theme.spacing(40),
-        },
-      }));
-      
-      export default function RecipeReviewCard() {
-        const classes = useStyles();
-        const [expanded, setExpanded] = React.useState(false);
-        // const image = require('./BeachRound.png');
-      
-        return (
-            <Slide direction="right" in={true} mountOnEnter unmountOnExit>
-            <Container id="about">
-                <Card id="aboutcard">
-                <Grid container spacing={2}>
+const useStyles = makeStyles(theme => ({
+    root: {
+      '& .MuiTextField-root': {
+        margin: theme.spacing(1),
+        flexGrow: 1,
+      },
+    },
+  }));
+
+export default function MultilineTextFields() {
+    const classes = useStyles();
+  
+    // When user clicks 'next', project name and description post to the db
+    const handleSubmit = event => {
+      event.preventDefault();
+
+
+    }
+
+  return (
+    <div>
+    <Container id="heading" maxWidth="sm">
+        <div>
+        <h1>Contact</h1>
+        </div>
+        <Card id="contactcard">
+            <Container>
+                <form className={classes.root} noValidate autoComplete="off">
+                    <Grid container spacing={3}>
+
+                    <h2>Email Address</h2>
+
                     <Grid item xs={12}>
-                        <h1 className="text">A Bit About Me</h1>
-                        <p className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien est, consectetur non tellus eu, pretium tincidunt purus. Mauris convallis metus ut risus euismod, eu consectetur magna ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur venenatis nisl in tempus. Mauris rhoncus viverra ante quis ultricies. Vestibulum quis maximus diam. Cras gravida ultrices tellus, in blandit sem vulputate in. Duis suscipit urna viverra, pulvinar elit et, placerat velit.
-                        </p>
-                        <Box id="morediv">
-                            <Fab variant="extended" id="more">
-                                <AddIcon className={classes.extendedIcon} />
-                                A Bit More About Me
-                            </Fab>
-                        </Box>
+                        <Grid item xs={12}>
+                        <TextField
+                        name="projectName"
+                        id="filled-textarea"
+                        placeholder="Enter Email"
+                        fullWidth
+                        />
+                        </Grid>
                     </Grid>
-                </Grid>
-                </Card>
+
+                    <h2>Note</h2>
+
+                    <Grid item xs={12}>
+                        <Grid item xs={12}>
+                        <TextField
+                        name="projectDescription"
+                        multiline
+                        rows="6"
+                        placeholder="Enter Note"
+                        id="filled-multiline-textarea"                            justify="flex-start"
+                        fullWidth
+                        />
+                        </Grid>
+                    </Grid>
+                    <Grid container id="submitbuttonarea">
+                        <Grid item xs={12} onClick={handleSubmit}>
+                            <Box>
+                                <Fab variant="extended" id="submitbtn">
+                                        Submit
+                                </Fab>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                    </Grid>
+                </form>
             </Container>
-            </Slide>
-        );
-      }
+        </Card>
+    </Container>
+    
+    </div>
+  );
+
+}

@@ -26,3 +26,22 @@
 #morediv {
     text-align: center;
 }
+
+h1 {
+    padding-top: 40px!important;
+    text-align: center!important;
+}
+
+#contactcard {
+    margin-bottom:125px!important;
+}
+
+#submitbuttonarea {
+    text-align: center!important;
+}
+
+#submitbtn {
+    margin-bottom: 30px!important;
+    color: white!important;
+    background-color:#203864!important
+}
