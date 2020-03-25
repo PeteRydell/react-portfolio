@@ -41,7 +41,7 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
     <Container>
-    <h1>Recent Projects</h1>
+    <h1 id="projectheader">Recent Projects</h1>
     </Container>
     <Container id="snapshots">
       <Grid container spacing={3}>
@@ -124,14 +124,6 @@ export default function CenteredGrid() {
         </Grid>
         </Slide>
       </Grid>
-      {/* <Grid item xs={12} id="navport">
-            <Box>
-                <Fab variant="extended" id="more">
-                    <NavIcon className={classes.extendedIcon} />
-                        Portfolio
-                </Fab>
-            </Box>
-        </Grid> */}
         <Grid item xs={12}>
         </Grid>
       </Container>

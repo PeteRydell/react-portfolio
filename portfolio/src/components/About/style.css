@@ -26,3 +26,7 @@
 #morediv {
     text-align: center;
 }
+
+h1.text {
+    padding-top:5px!important;
+}

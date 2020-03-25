@@ -70,7 +70,7 @@ export default function MultilineTextFields() {
                     <Grid container id="submitbuttonarea">
                         <Grid item xs={12} onClick={handleSubmit}>
                             <Box>
-                                <Fab variant="extended" id="submitbtn">
+                                <Fab variant="extended" id="submitbtn" href="mailto:peterydell@gmail.com">
                                         Submit
                                 </Fab>
                             </Box>
