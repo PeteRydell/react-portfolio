@@ -37,7 +37,10 @@ require('./style.css');
                     <Grid item xs={6}>
                         <h1 className="text">A Bit About Me</h1>
                         <p className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien est, consectetur non tellus eu, pretium tincidunt purus. Mauris convallis metus ut risus euismod, eu consectetur magna ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur venenatis nisl in tempus. Mauris rhoncus viverra ante quis ultricies. Vestibulum quis maximus diam. Cras gravida ultrices tellus, in blandit sem vulputate in. Duis suscipit urna viverra, pulvinar elit et, placerat velit.
+                        Hi! My name is Peter Rydell and I'm a freelance coder living in Los Angeles, CA.
+                        <br></br>
+                        <br></br>
+                        I've spent most of my career as a PR and Communications consultant specializing in consumer technology and sports, and in 2019 I took my passion for coding into the classroom at UCLA. 
                         </p>
                         <Box id="morediv">
                             <Fab variant="extended" id="more">
