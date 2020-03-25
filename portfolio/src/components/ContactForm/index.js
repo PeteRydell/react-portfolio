@@ -8,8 +8,10 @@ import { Link, navigate } from '@reach/router';
 import Card from '@material-ui/core/Card';
 import Fab from '@material-ui/core/Fab';
 
+
 require('./style.css');
 
+// const Mailto = require('react-mailto');
 const useStyles = makeStyles(theme => ({
     root: {
       '& .MuiTextField-root': {
@@ -22,12 +24,15 @@ const useStyles = makeStyles(theme => ({
 export default function MultilineTextFields() {
     const classes = useStyles();
   
-    // When user clicks 'next', project name and description post to the db
+    // // When user clicks 'next', project name and description post to the db
     const handleSubmit = event => {
       event.preventDefault();
-
-
     }
+
+    const requiredFields = [
+        'email',
+        'note',
+      ]
 
   return (
     <div>
@@ -45,7 +50,7 @@ export default function MultilineTextFields() {
                     <Grid item xs={12}>
                         <Grid item xs={12}>
                         <TextField
-                        name="projectName"
+                        name="email"
                         id="filled-textarea"
                         placeholder="Enter Email"
                         fullWidth
@@ -58,7 +63,7 @@ export default function MultilineTextFields() {
                     <Grid item xs={12}>
                         <Grid item xs={12}>
                         <TextField
-                        name="projectDescription"
+                        name="note"
                         multiline
                         rows="6"
                         placeholder="Enter Note"
@@ -70,9 +75,10 @@ export default function MultilineTextFields() {
                     <Grid container id="submitbuttonarea">
                         <Grid item xs={12} onClick={handleSubmit}>
                             <Box>
-                                <Fab variant="extended" id="submitbtn" href="mailto:peterydell@gmail.com">
-                                        Submit
-                                </Fab>
+                                {/* <Mail /> */}
+                                {/* <Mailto email="peterrydell@gmail.com" obfuscate={true}>
+                                    Email me!
+                                </Mailto> */}
                             </Box>
                         </Grid>
                     </Grid>

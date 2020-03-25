@@ -13,34 +13,13 @@ import ContactForm from './components/ContactForm'
 import { render } from "react-dom"
 import { Router } from "@reach/router"
 
-// function App() {
-//   return (
-//     <div>
-//         <Nav />
-//         <Router>
-//           <Container>
-//             <Grid>
-//                 <Grid item xs={12}>
-//                   <Main />
-//                   <Divider id="line"/>
-//                 </Grid>
-//             </Grid>
-//           </Container>
-//           <About />
-//           <Project />
-//         </Router>
-//         <Footer />
-//     </div>
-//   );
-// }
-
 const App = ({ children }) => (
   <div>
   <Nav />
   <Router>
     <Home path="/" />
     <Bio path="about" />
-    <Contact path="contact" />
+    {/* <Contact path="contact" /> */}
   </Router>
   <Footer />
   </div>

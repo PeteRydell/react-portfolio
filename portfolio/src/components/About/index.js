@@ -35,7 +35,7 @@ require('./style.css');
                 <Card id="aboutcard">
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
-                        <h1 className="text">A bit About Me</h1>
+                        <h1 className="text">A Bit About Me</h1>
                         <p className="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien est, consectetur non tellus eu, pretium tincidunt purus. Mauris convallis metus ut risus euismod, eu consectetur magna ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur venenatis nisl in tempus. Mauris rhoncus viverra ante quis ultricies. Vestibulum quis maximus diam. Cras gravida ultrices tellus, in blandit sem vulputate in. Duis suscipit urna viverra, pulvinar elit et, placerat velit.
                         </p>

@@ -4,9 +4,9 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
-
 
 require('./style.css');
 
@@ -44,6 +44,9 @@ export default function SimpleBottomNavigation() {
                 </Link>
                 <Link href="https://www.linkedin.com/in/peterrydell/">
                     <LinkedInIcon className= "icon" color="disabled" />
+                </Link>
+                <Link href="mailto:peterydell@gmail.com">
+                    <EmailIcon className= "icon" color="disabled" />
                 </Link>
                 <p>Copyright © 2020 Pete Rydell • Los Angeles based Freelance Web Designer & Developer</p>
             </Grid>

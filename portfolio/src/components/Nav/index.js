@@ -43,7 +43,7 @@ export default function () {
                 <Button color="inherit"><Link to="/" class="navlink">Home</Link></Button>
                 <Button color="inherit"><Link to="about" class="navlink">About</Link></Button>
                 {/* <Button color="inherit">Portfolio</Button> */}
-                <Button color="inherit"> <Link to="contact" class="navlink">Contact</Link></Button>
+                {/* <Button color="inherit"> <Link to="contact" class="navlink">Contact</Link></Button> */}
             </Grid>
           </AppBar>
           <Hidden xsDown>

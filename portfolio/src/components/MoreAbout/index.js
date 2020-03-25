@@ -61,7 +61,7 @@ require('./style.css');
                             Hi! My name is Peter Rydell and I'm a freelance coder living in Los Angeles, CA.
                             <br></br>
                             <br></br>
-                            After graduating from Sewanee in 2014 with a Bachelor’s in International and Global Studies, I spent 4 years living in Washington, DC as a Public Affairs PR and Communications consultant with Weber Shandwick. In 2018 I moved out to LA, transitioning into consumer tech, and working on behalf of clients including Sony Electronics, Riot Games and the Call of Duty League among others. 
+                            After graduating from Sewanee in 2014 with a Bachelor’s in International and Global Studies, I spent 4 years living in Washington, DC as a PR and Communications consultant with Weber Shandwick. In 2018 I moved out to LA, transitioning into consumer tech, and working on behalf of clients including Sony Electronics, Riot Games and the Call of Duty League among others. 
                             <br></br>
                             <br></br>
                             In 2019 I took my passion for coding into the classroom at UCLA. Throughout my time there and beyond I've assisted a multitude of clients with web design and development, wireframes, UI, administrative solutions, WYSIWYG tools, education programs and more.
