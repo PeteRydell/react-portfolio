@@ -8,6 +8,9 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Grid from '@material-ui/core/Grid';
 import Slide from '@material-ui/core/Slide';
+import { Router, Link, Match } from "@reach/router"
+import MoreAbout from '../MoreAbout'
+import { render } from "react-dom"
 
 require('./style.css');
 
@@ -23,6 +26,21 @@ require('./style.css');
           height: theme.spacing(40),
         },
       }));
+
+      const NavLink = props => (
+        <Link
+          {...props}
+          getProps={({ isCurrent }) => {
+            // the object returned here is passed to the
+            // anchor element's props
+            return {
+              style: {
+                color: isCurrent ? "white" : "gray"
+              }
+            };
+          }}
+        />
+      );
       
       export default function RecipeReviewCard() {
         const classes = useStyles();
@@ -45,7 +63,7 @@ require('./style.css');
                         <Box id="morediv">
                             <Fab variant="extended" id="more">
                                 <AddIcon className={classes.extendedIcon} />
-                                A Bit More About Me
+                                <NavLink to="/about">A Bit More About Me</NavLink>
                             </Fab>
                         </Box>
                     </Grid>
@@ -60,5 +78,37 @@ require('./style.css');
             </Container>
             </Slide>
         );
-      }
+      };
+
+      const App = props => (
+        <div>
+          <h1>Active Links</h1>
+          <nav>
+            <NavLink to="/">Home</NavLink> <NavLink to="/about">About</NavLink>
+          </nav>
+          {props.children}
+        </div>
+      );
+
+      const Bio = () => (
+        <div>
+          <Container>
+            <Grid item xs={12}></Grid>
+            <Grid item xs={12}>
+              <MoreAbout />
+            </Grid>
+          </Container>
+        </div>
+      );
+
+      render(
+        <Router>
+          <App path="/">
+            <Bio path="about" />
+          </App>
+        </Router>,
+        document.getElementById("root")
+      );
+
+render(<App />, document.getElementById("root"));
 

@@ -23,6 +23,11 @@
     background-color:#203864!important
 }
 
+a {
+    color: white!important;
+    text-decoration: none!important;
+}
+
 #morediv {
     text-align: center;
 }
