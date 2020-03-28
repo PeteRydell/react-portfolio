@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d8673f7.chunk.css",
+    "main.js": "/static/js/main.a8403acc.chunk.js",
+    "main.js.map": "/static/js/main.a8403acc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
+    "static/js/2.847f13eb.chunk.js": "/static/js/2.847f13eb.chunk.js",
+    "static/js/2.847f13eb.chunk.js.map": "/static/js/2.847f13eb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a68ef0f0ca26b1eb5b11a22d411e73ae.js": "/precache-manifest.a68ef0f0ca26b1eb5b11a22d411e73ae.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3d8673f7.chunk.css.map": "/static/css/main.3d8673f7.chunk.css.map",
+    "static/js/2.847f13eb.chunk.js.LICENSE.txt": "/static/js/2.847f13eb.chunk.js.LICENSE.txt",
+    "static/media/BeachRound.png": "/static/media/BeachRound.bbca896c.png",
+    "static/media/FontLogo.png": "/static/media/FontLogo.7b684373.png",
+    "static/media/LARound.png": "/static/media/LARound.e5ecc5a7.png",
+    "static/media/Picture1.png": "/static/media/Picture1.003ead4f.png",
+    "static/media/Picture2.png": "/static/media/Picture2.cbf5ca81.png",
+    "static/media/Picture3.png": "/static/media/Picture3.6e62b69e.png",
+    "static/media/SewaneeRound.png": "/static/media/SewaneeRound.50c454ac.png",
+    "static/media/TeddyRound.png": "/static/media/TeddyRound.0ef94fee.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ceaf4b5f.js",
+    "static/js/2.847f13eb.chunk.js",
+    "static/css/main.3d8673f7.chunk.css",
+    "static/js/main.a8403acc.chunk.js"
+  ]
+}
